@@ -1,4 +1,4 @@
-# To-Do
+# Features
 
 - [x] Git configuration
 - [x] Add WallPapers
