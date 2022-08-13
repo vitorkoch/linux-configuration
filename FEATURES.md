@@ -2,7 +2,7 @@
 
 - [x] Git configuration
 - [x] Add WallPapers
-- [x] Add Fonts
-- [ ] Add WhiteSur theme
-- [ ] Add Candy Icons theme
-- [ ] Add Oreo Cursors
+- [x] Add Cascadia Code
+- [x] Add Vimix Cursors
+- [x] Add Candy Icons theme
+- [x] Add WhiteSur theme
