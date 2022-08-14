@@ -44,4 +44,3 @@ gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Dark"
 mkdir ~/.fonts
 cp $SCRIPT_DIR/fonts/* ~/.fonts  
 gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
-
