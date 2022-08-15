@@ -22,7 +22,7 @@ git clone https://github.com/EliverLara/candy-icons.git || {
 mkdir ~/.icons
 
 cp -r candy-icons ~/.icons
-gsettings set org.gnome.desktop.interface icon-theme "candy-icons"
+
 
 git clone https://github.com/vitorkoch/Vimix-cursors.git || {
     echo "Updating Vimix-cursors"
@@ -30,7 +30,7 @@ git clone https://github.com/vitorkoch/Vimix-cursors.git || {
 }
 
 Vimix-cursors/install.sh
-gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
+
 
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
     echo "Updating WhiteSur-gtk-theme"
@@ -38,9 +38,16 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
 }
 
 WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple
-gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark"
-gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Dark"
+
 
 mkdir ~/.fonts
 cp $SCRIPT_DIR/fonts/* ~/.fonts  
+
+# Tweaks
+gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark"
+gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Dark"
+gsettings set org.gnome.desktop.interface icon-theme "candy-icons"
+gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
+gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
+gsettings set org.gnome.desktop.interface show-battery-percentage true
