@@ -43,5 +43,4 @@ gsettings set org.gnome.desktop.interface icon-theme "candy-icons"
 gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
 gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
-gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
