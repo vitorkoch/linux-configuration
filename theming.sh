@@ -31,7 +31,7 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
     echo "Updating WhiteSur-gtk-theme"
     cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
 }
-WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple -t purple -o normal
+WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple -t purple -o normal -P smaller
 
 mkdir ~/.fonts
 cp $SCRIPT_DIR/fonts/* ~/.fonts  
@@ -44,3 +44,4 @@ gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
 gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat

@@ -1,13 +1,4 @@
 #!/bin/bash
 
-DEPENDENCIES=(
-    yay
-    git
-    wget
-)
-
-for DEPENDECY in ${DEPENDENCIES[@]}; do
-    sudo pacman -S "$DEPENDECY" || yay -S "$DEPENDECY"
-done
-
+sudo pacman -S git || yay -S git
 sudo pacman -Syu ; yay -Syu
