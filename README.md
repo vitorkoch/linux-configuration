@@ -22,5 +22,5 @@ My personal linux configuration/customization (Manjaro - GNOME)
 - [x] Enable show battery percentage
 - [x] Set mouse acceleration to flat
 - [x] Increase font size
+- [x] Decrease top panel size
 - [ ] Install printer drivers
-- [ ] Decrease top panel size
