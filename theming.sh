@@ -11,6 +11,7 @@ SCRIPT_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 #echo "Script dir: $SCRIPT_DIR"
 # ==========================================
 
+sudo echo "Sudo mode"
 mkdir ~/theming
 cd ~/theming
 
@@ -31,7 +32,8 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
     echo "Updating WhiteSur-gtk-theme"
     cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
 }
-WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple -t purple -o normal -P smaller
+WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple -t purple -o normal -P smaller -l
+sudo WhiteSur-gtk-theme/tweaks.sh --firefox --flatpak --snap --dash-to-dock --gdm --theme purple --color Dark --opacity normal
 
 mkdir ~/.fonts
 cp $SCRIPT_DIR/fonts/* ~/.fonts  
@@ -44,3 +46,4 @@ gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
 gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+    

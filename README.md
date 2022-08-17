@@ -19,7 +19,6 @@ My personal linux configuration/customization (Manjaro - GNOME)
 
 - [x] Git configuration
 - [x] Increase cursor size
-- [x] Enable show battery percentage
 - [x] Set mouse acceleration to flat
 - [x] Increase font size
 - [x] Decrease top panel size
