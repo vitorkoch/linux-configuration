@@ -1,11 +1,10 @@
 # linux-configuration
 
-My personal linux configuration/customization (Manjaro - GNOME)
+My personal linux configuration/customization (Kubuntu - KDE)
 
 ## Dependencies
 
-1. GNOME
-2. Git
+1. Git
 
 ## Features
 
@@ -18,8 +17,4 @@ My personal linux configuration/customization (Manjaro - GNOME)
 ## Tweaks
 
 - [x] Git configuration
-- [x] Increase cursor size
-- [x] Set mouse acceleration to flat
-- [x] Increase font size
-- [x] Decrease top panel size
 - [ ] Install printer drivers
