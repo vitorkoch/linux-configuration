@@ -8,13 +8,10 @@ My personal linux configuration/customization (Kubuntu - KDE)
 
 ## Features
 
-- [x] Add WallPapers
-- [x] Add Fonts
+- [x] Add some wallpapers
+- [x] Add some fonts
 - [x] Add Vimix Cursors
-- [x] Add Candy Icons theme
-- [x] Add WhiteSur theme (GTK and Shell)
-
-## Tweaks
-
+- [x] Add Tela Icons theme
+- [x] Add Layan theme (GTK and shell)
 - [x] Git configuration
 - [ ] Install printer drivers

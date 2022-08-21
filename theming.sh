@@ -15,35 +15,35 @@ sudo echo "Sudo mode"
 mkdir ~/theming
 cd ~/theming
 
-git clone https://github.com/EliverLara/candy-icons.git || {
-    echo "Updating candy-icons"
-    cd candy-icons ; git pull ; cd ~/theming
+git clone https://github.com/vinceliuice/Tela-icon-theme.git || {
+    echo "Updating Tela-icons"
+    cd Tela-icon-theme ; git pull ; cd ~/theming
 }
-mkdir ~/.icons
-cp -r candy-icons ~/.icons
+sudo Tela-icon-theme/install.sh
 
 git clone https://github.com/vitorkoch/Vimix-cursors.git || {
     echo "Updating Vimix-cursors"
     cd Vimix-cursors ; git pull ; cd ~/theming
 }
-Vimix-cursors/install.sh
+sudo Vimix-cursors/install.sh
 
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
-    echo "Updating WhiteSur-gtk-theme"
-    cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
+git clone https://github.com/vinceliuice/Layan-gtk-theme.git || {
+    echo "Updating Layan theme"
+    cd Layan-gtk-theme ; git pull ; cd ~/theming
 }
-WhiteSur-gtk-theme/install.sh -c Dark --normal -i simple -t purple -o normal -P smaller -l
-sudo WhiteSur-gtk-theme/tweaks.sh --firefox --flatpak --snap --dash-to-dock --gdm --theme purple --color Dark --opacity normal
+sudo Layan-gtk-theme/install.sh
 
 mkdir ~/.fonts
-cp $SCRIPT_DIR/fonts/* ~/.fonts  
+sudo cp $SCRIPT_DIR/fonts/* ~/.fonts  
 
-# Tweaks
-gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-Dark-purple"
-gsettings set org.gnome.shell.extensions.user-theme name "WhiteSur-Dark-purple"
-gsettings set org.gnome.desktop.interface icon-theme "candy-icons"
-gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
-gsettings set org.gnome.desktop.interface cursor-size 32
-gsettings set org.gnome.desktop.interface font-name "Cascadia Code 13"
-gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
-    
+
+clear
+echo -e "
+\033[1m
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Go to your system settings (GNOME Tweaks in GNOME Shell) and apply the changes
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\033[0m
+"
