@@ -27,11 +27,11 @@ git clone https://github.com/vitorkoch/Vimix-cursors.git || {
 }
 sudo Vimix-cursors/install.sh
 
-git clone https://github.com/vinceliuice/Layan-gtk-theme.git || {
-    echo "Updating Layan theme"
-    cd Layan-gtk-theme ; git pull ; cd ~/theming
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
+    echo "Updating WhiteSur-gtk-theme"
+    cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
 }
-sudo Layan-gtk-theme/install.sh
+sudo WhiteSur-gtk-theme/install.sh --theme purple --color Dark --normalshowapps --icon simple -l --opacity normal
 
 mkdir ~/.fonts
 sudo cp $SCRIPT_DIR/fonts/* ~/.fonts  
@@ -40,10 +40,17 @@ sudo cp $SCRIPT_DIR/fonts/* ~/.fonts
 clear
 echo -e "
 \033[1m
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Go to your system settings (GNOME Tweaks in GNOME Shell) and apply the changes
+Recommended themes
+- Cursor: Vimix-cursors
+- Icons: Tela-dark
+- Shell: Whitesur
+- Legacy applications: Whitesur
 
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Go to your system settings (GNOME Tweaks in GNOME Shell) 
+and apply the changes
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 \033[0m
 "
