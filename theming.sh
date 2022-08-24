@@ -31,7 +31,7 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
     echo "Updating WhiteSur-gtk-theme"
     cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
 }
-sudo WhiteSur-gtk-theme/install.sh --theme purple --color Dark --normalshowapps --icon simple -l --opacity normal
+sudo WhiteSur-gtk-theme/install.sh --color Dark --normalshowapps --icon simple -l --opacity normal
 
 mkdir ~/.fonts
 sudo cp $SCRIPT_DIR/fonts/* ~/.fonts  
