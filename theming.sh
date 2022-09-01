@@ -18,13 +18,13 @@ git clone https://github.com/vinceliuice/Tela-icon-theme.git || {
     echo "Updating Tela-icons"
     cd Tela-icon-theme ; git pull ; cd ~/theming
 }
-sudo Tela-icon-theme/install.sh
+sudo Tela-icon-theme/install.sh -a
 
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git || {
     echo "Updating Tela-circle-icon-theme"
     cd Tela-circle-icon-theme ; git pull ; cd ~/theming
 }
-sudo Tela-circle-icon-theme/install.sh
+sudo Tela-circle-icon-theme/install.sh -a
 
 git clone https://github.com/alvatip/Nordzy-cursors || {
     echo "Updating Nordzy-cursors"
