@@ -21,6 +21,12 @@ git clone https://github.com/vinceliuice/Tela-icon-theme.git || {
 }
 sudo Tela-icon-theme/install.sh
 
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git || {
+    echo "Updating Tela-circle-icon-theme"
+    cd Tela-circle-icon-theme ; git pull ; cd ~/theming
+}
+sudo Tela-circle-icon-theme/install.sh
+
 git clone https://github.com/vitorkoch/Vimix-cursors.git || {
     echo "Updating Vimix-cursors"
     cd Vimix-cursors ; git pull ; cd ~/theming
@@ -31,22 +37,24 @@ git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
     echo "Updating WhiteSur-gtk-theme"
     cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
 }
-sudo WhiteSur-gtk-theme/install.sh --color Dark --normalshowapps --icon simple -l --opacity normal
+sudo WhiteSur-gtk-theme/install.sh --color Dark --normalshowapps --icon simple -l --opacity normal --round
+
+wget -P ~/.themes https://github.com/EliverLara/Nordic/releases/download/v2.2.0/Nordic-darker.tar.xz
+cd ~/.themes ; tar -xf Nordic-darker.tar.xz ; cd ~
 
 mkdir ~/.fonts
 sudo cp $SCRIPT_DIR/fonts/* ~/.fonts
 
-
-clear
+#clear
 echo -e "
 \033[1m
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Recommended themes
 - Cursor: Vimix-cursors
-- Icons: Tela-dark
-- Shell: Whitesur
-- Legacy applications: Whitesur
+- Icons: Tela-dark-circle
+- Shell: Nordic-darker
+- Legacy applications: Nordic-darker
 
 Go to your system settings (GNOME Tweaks in GNOME Shell) 
 and apply the changes
