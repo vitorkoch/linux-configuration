@@ -14,43 +14,38 @@ SCRIPT_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 sudo echo "Sudo mode"
 mkdir ~/theming ; cd ~/theming
 
-git clone https://github.com/vinceliuice/Tela-icon-theme.git || {
-    echo "Updating Tela-icons"
-    cd Tela-icon-theme ; git pull ; cd ~/theming
-}
-sudo Tela-icon-theme/install.sh -a
+# Shell
+git clone https://github.com/vinceliuice/Orchis-theme.git 
+cd Orchis-theme ; sudo ./install.sh --libadwaita --size standard --theme default --color dark ; cd ~/theming
 
-git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git || {
-    echo "Updating Tela-circle-icon-theme"
-    cd Tela-circle-icon-theme ; git pull ; cd ~/theming
-}
-sudo Tela-circle-icon-theme/install.sh -a
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+cd WhiteSur-gtk-theme ; sudo ./install.sh --color Dark --normalshowapps --icon simple -l --opacity normal --round --nord ; cd ~/theming
 
-git clone https://github.com/alvatip/Nordzy-cursors || {
-    echo "Updating Nordzy-cursors"
-    cd Nordzy-cursors ; git pull ; cd ~/theming
-}
-cd Nordzy-cursors ; sudo ./install.sh ; cd ~/theming
+# Icons
+git clone https://github.com/vinceliuice/Tela-icon-theme.git
+cd Tela-icon-theme ; sudo ./install.sh ; cd ~/theming
 
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git || {
-    echo "Updating WhiteSur-gtk-theme"
-    cd WhiteSur-gtk-theme ; git pull ; cd ~/theming
-}
-sudo WhiteSur-gtk-theme/install.sh --color Dark --normalshowapps --icon simple -l --opacity normal --round --nord
+git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git
+cd papirus-icon-theme ; sudo ./install.sh ; cd ~/theming
 
+# Cursor
+cd ~/theming ; wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.2/Bibata-Modern-Classic.tar.gz
+tar -xf Bibata-Modern-Classic.tar.gz 
+sudo cp -r ./Bibata-Modern-Classic/ /usr/share/icons
+
+# Fonts
 mkdir ~/.fonts ; sudo cp $SCRIPT_DIR/fonts/* ~/.fonts
 
-#clear
+#rm -rf ~/theming
 echo -e "
 \033[1m
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Recommended themes
-- Cursor: Nordzy-cursors
-- Icons: Tela-dark-circle
-- Shell: WhiteSur-Dark Nord
-- Legacy applications: WhiteSur-Dark Nord 
-
+Installed
+- Cursor: Bibata-Modern-Classic
+- Icons: Tela & Papirus
+- Shell: WhiteSur-Nord & Orchis
+- Fonts: Cascadia Code, Arial, Times New Roman, JetBrains Mono
 Go to your system settings (GNOME Tweaks in GNOME Shell) 
 and apply the changes
 
