@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 echo "Git configuration"
 read -p "Name: " name
