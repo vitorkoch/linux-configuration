@@ -4,5 +4,5 @@ mkdir -p ~/.config/conky/
 cp ./conky/conky.conf ~/.config/conky/
 mkdir -p ~/.fonts
 echo "Adding Josefin Sans font"
-cp fonts/JosefinSans-Regular.ttf ~/.fonts
+cp fonts/Poppins-Regular.ttf ~/.fonts
 echo "Done"
